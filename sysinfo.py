@@ -113,6 +113,14 @@ get_nprocs_conf.restype=c_int
 get_nprocs=libc.get_nprocs
 get_nprocs.restype=c_int
 
+get_phys_pages=libc.get_phys_pages
+get_phys_pages.restype=c_long
+
+
+get_avphys_pages=libc.get_avphys_pages
+get_avphys_pages.restype=c_long
+
+
 
 def get_sysinfo():
     info_s = sysinfo_s()
