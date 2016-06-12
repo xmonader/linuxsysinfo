@@ -107,6 +107,12 @@ sysinfo=libc.sysinfo
 sysinfo.restype=c_int
 sysinfo.argtypes =[POINTER(sysinfo_s)]
 
+get_nprocs_conf=libc.get_nprocs_conf
+get_nprocs_conf.restype=c_int
+
+get_nprocs=libc.get_nprocs
+get_nprocs.restype=c_int
+
 
 def get_sysinfo():
     info_s = sysinfo_s()
